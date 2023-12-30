@@ -32,11 +32,11 @@
         </header>
         <main class="food-list__main">
 
-            <section class="food-list__section--hero">
+            <div class="food-list__section--hero">
                 <div class="food-list__div--hero-content">
-                    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image-plat">
                  </div>
-            </section>
+                </div>
 
             <section class="food-list__section">
                 <div class="food-list__div">
@@ -44,7 +44,7 @@
                        <div class="food-list__title">
                           <h1>La palette du goût</h1>
                        </div>
-                       <div class="btn__like">
+                       <div class="food-list__btn-like">
                          <input type="checkbox" id="liked1">
                          <label for="liked1">
                             <i class="far fa-heart"></i>
@@ -89,7 +89,7 @@
                 </li>
                 <li class="food-list__item">
                     <div class="food-list__item-content">
-                        <div class="food-list__btn" ">
+                        <div class="food-list__btn">
                             <div class="button-text">
                                 <h3>Œuf au plat</h3>
                                 <p>Assaisonné à la truffe sur lit de caviar</p>
@@ -103,13 +103,14 @@
                         </div>
                     </div>
                 </li>
+                </ul>
             </div>
 
             
-            <div class="food-list__list">
+         <div class="food-list__list">
                 <h3 class="food-list__subtitle">Plats</h3>
-                <ul class="food-list__numbered-list">
-         <li class="food-list__item">
+           <ul class="food-list__numbered-list">
+            <li class="food-list__item">
             <div class="food-list__item-content">
                 <div class="food-list__btn">
                     <div class="button-text">
@@ -124,8 +125,8 @@
                     </div>
                 </div>
             </div>
-        </li>
-        <li class="food-list__item">
+            </li>
+            <li class="food-list__item">
             <div class="food-list__item-content">
                 <div class="food-list__btn">
                     <div class="button-text">
@@ -140,10 +141,10 @@
                     </div>
                 </div>
             </div>
-        </li>
-        <li class="food-list__item">
+            </li>
+            <li class="food-list__item">
             <div class="food-list__item-content">
-                <div class="food-list__btn" ">
+                <div class="food-list__btn">
                     <div class="button-text">
                         <h3>Filet de turbot</h3>
                         <p>Aux agrumes</p>
@@ -156,8 +157,9 @@
                     </div>
                 </div>
             </div>
-        </li>
-    </div>
+            </li>
+           </ul>
+         </div>
 
     <div class="food-list__list">
         <h3 class="food-list__subtitle">Désserts</h3>
@@ -196,7 +198,7 @@
 </li>
 <li class="food-list__item">
     <div class="food-list__item-content">
-        <div class="food-list__btn" ">
+        <div class="food-list__btn">
             <div class="button-text">
                 <h3>Mousse au chocolat </h3>
                 <p>Au piment d'Espelette et à la truffe noire</p>
@@ -210,6 +212,7 @@
         </div>
     </div>
 </li>
+</ul>
 </div>
 
                     <div class="order__btn">
@@ -238,7 +241,7 @@
                         <a href="#">Mentions légales</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#">Contact</a>
+                        <a href="mailto:your-email@example.com">Contact</a>
                     </li>
                 </ul>
             </div>

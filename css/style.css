@@ -71,6 +71,7 @@ body {
   margin: 0 auto;
   top: 0;
   height: 75vh;
+  width: 800px;
   overflow: hidden;
 }
 #cooking .bubble {
@@ -327,6 +328,7 @@ body {
 
 .hero__content p {
   font-size: 18px;
+  padding-bottom: 15px;
   font-weight: 300;
   margin: 27px 0;
 }
@@ -343,6 +345,7 @@ body {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -483,9 +486,17 @@ body {
   gap: 18px;
 }
 
+.restaurants-cards__div {
+  flex: 1;
+  position: relative;
+}
+
 /********Like Button******/
 .btn__like {
   cursor: pointer;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
 }
 
 .btn__like input {
@@ -633,6 +644,47 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
+}
+
+/************ food list btn like heart***************/
+.food-list__btn-like {
+  cursor: pointer;
+}
+
+.food-list__btn-like input {
+  display: none;
+}
+
+.food-list__btn-like label {
+  display: flex;
+  align-items: center;
+}
+
+.food-list__btn-like i.fas {
+  font-size: 24px;
+  color: #d151ef;
+  display: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-list__btn-like i.far {
+  font-size: 24px;
+  color: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-list__btn-like input:checked + label i.fas {
+  display: inline-block;
+  transform: scale(1.1);
+}
+
+.food-list__btn-like input:checked + label i.far {
+  display: none;
+}
+
+.food-list__btn-like:hover i.far {
+  color: var(--main-color);
+  transform: scale(1.1);
 }
 
 /***************food list items**************/
@@ -788,7 +840,6 @@ body {
 @media (min-width: 1440px) {
   .hero {
     text-align: center;
-    padding: 30px;
   }
   .hero__content h1 {
     font-size: 40px;
