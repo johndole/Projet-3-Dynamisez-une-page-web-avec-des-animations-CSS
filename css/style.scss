@@ -653,21 +653,26 @@ svg.tea {
   transition: margin-left 0.3s ease-out;
 }
 
+
+/**************** Selecteur de plats *************/
+
 .check-mark {
-  display: none;
+  width: 0;
+  display: flex;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #fff;
+  overflow: hidden;
+  animation-direction: normal;
+  transition: all 0.3s ease-in-out;
 }
 
 .food-list__btn:hover .check-mark {
   width: 50px;
   animation-direction: reverse;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99e2d0;
-  color: #fff;
-  overflow: hidden;
-  transition: width 0.3s ease-out;
 }
 
 .fa-circle-check {
@@ -675,7 +680,7 @@ svg.tea {
   font-size: 25px;
 }
 
-/*******************Order button*************/
+/*************** Order button *************/
 
 .order__btn {
   display: flex;
